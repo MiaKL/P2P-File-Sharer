@@ -5,4 +5,4 @@ The software consists of two scripts-- tracker and peer. The tracker breaks a gi
 
 Once all the peers have downloaded their allotted chunks, they each create an upload and a download thread and connect to each other in ring topology to simultaneously upload requested chunks to their upload neighbor and download chunks they still need from their download neighbor. After each download, a peer updates its summary file. Once a peer has received all chunks, it reassembles them into a single file-- a replica of the original file stored by the tracker.
 
-This file sharer can be simulated on a single device using the local host 127.0.0.1 or can be run accross multiple devices, with each peer entering the IP address of the peer they will download from in the command line.
+This file sharer can be simulated on a single device using the local host 127.0.0.1 or can be run across multiple devices, with each peer entering the IP address of the peer they will download from in the command line.
